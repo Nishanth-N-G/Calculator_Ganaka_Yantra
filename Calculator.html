@@ -2,152 +2,12 @@
 <html>
     <head>
         <title> Online Calculator </title>
-        <script>
-           function dis(val)
-         {
-             document.getElementById("result").value+=val
-         }
-        
-         function solve()
-         {
-             let x = document.getElementById("result").value
-             let y = eval(x)
-             if(y===undefined){
-             document.getElementById("result").value = 0;
-             }else{
-             document.getElementById("result").value = y;   
-             }
-         }
-        
-         function clr()
-         {
-             document.getElementById("result").value = ""
-         }
-
-         function backspace() 
-            {
-                var value = document.getElementById("result").value;
-                document.getElementById("result").value = value.substr(0, value.length - 1);
-            }
-
-            function sqre()
-            {
-                solve();
-                var num= document.getElementById("result").value;
-                var square= num*num;
-                document.getElementById("result").value = square;
-            }
-            
-            function sqrt() 
-            {
-                solve();
-	            var num=document.getElementById("result").value;
-                document.getElementById("result").value = Math.sqrt(num);
-            }
-         </script>
-
-         <style>
-             h1{
-                text-align: center;
-                text-decoration: underline;
-                color: #0f3d3d;
-                margin: 15px 0; text-align: center;
-             }    
-               
-            .main-container input[type="button"]
-            {
-                margin: 10px;
-                width: 60px;
-                height: 60px;
-                font-size: 25px;
-                font-weight: 700;
-            }
-            .main-container .red {
-                background: #248f8f;
-                border: #248f8f;
-                color: #fff;
-}
-
-            .main-container .green {
-                background-color: #0f3d3d;
-                border: #0f3d3d;
-                color: #fff;
-            }
-            .main-container .blk {
-                color: #248f8f;
-            }
-
-            .table {
-            margin-left: auto;
-            margin-right: auto;
-            }
-
-            table.calci {
-            margin: 50px auto;
-            }
-
-            .main-container {
-                margin: auto;
-                width: 31%;
-                border: 3px solid #248f8f;
-                border-radius: 10px;
-                background-color: #ebfafa;
-            }
-
-            .main-container .display input[type="text"] {
-                text-align: end;
-                font-size: 40px;
-                font-family: cursive;
-                width: 90%;
-                height: 60px;
-                margin: 15px;
-            }
-            
-            .num-container {
-                justify-content: space-around;
-                width: auto;
-                padding: 15px 0;
-            }
-
-            .num-container .num-row {
-                display: flex;
-                justify-content: space-around;
-            }
-
-            .non-display {
-                display: flex;
-                justify-content: center;
-            }
-            
-            .display {
-                text-align: center;
-            }
-            .operators {
-                padding: 15px 0px;
-            }
-
-            .modifiers {
-                padding: 15px 0px;
-            }
-
-            .ops {
-                display: flex;
-                justify-content: space-around;
-                width: auto;
-                margin: 0px 15px;
-                padding: 15px;
-            }
-            
-            input.double {
-                height: 140px !important;
-            }
-         </style>
+        <link rel="stylesheet" type="text/css" href="./Calulator.css">      
     </head>
-    <body>
-        
+    <body>       
         <div class="main-container">
             <h1 class="Online-calculator">Ganaka-Yantram</h1>
-            <div class="display"> <input type="text" id="result"> </div>
+            <div class="display"> <input type="text" id="result" onkeypress="return onlyNumberKey(event)"> </div>
             <div class="non-display">
             <div class="num+ops">
             <div class="num-container">
@@ -192,6 +52,6 @@
             </div>
          </div> 
         </div>
-        
+        <script src="./Calculator.js"></script>
     </body>
 </html>
