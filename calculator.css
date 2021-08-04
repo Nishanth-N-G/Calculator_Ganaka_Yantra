@@ -1,0 +1,94 @@
+h1{
+    text-align: center;
+    text-decoration: underline;
+    color: #0f3d3d;
+    margin: 15px 0; text-align: center;
+ }    
+   
+.main-container input[type="button"]
+{
+    margin: 10px;
+    width: 60px;
+    height: 60px;
+    font-size: 25px;
+    font-weight: 700;
+}
+.main-container .red {
+    background: #248f8f;
+    border: #248f8f;
+    color: #fff;
+}
+
+.main-container .green {
+    background-color: #0f3d3d;
+    border: #0f3d3d;
+    color: #fff;
+}
+.main-container .blk {
+    color: #248f8f;
+}
+
+.table {
+margin-left: auto;
+margin-right: auto;
+}
+
+table.calci {
+margin: 50px auto;
+}
+
+.main-container {
+    margin: auto;
+    width: 420px;
+    border: 3px solid #248f8f;
+    border-radius: 10px;
+    background-color: #ebfafa;
+}
+
+.main-container .display input[type="text"] {
+    text-align: end;
+    font-size: 40px;
+    font-family: cursive;
+    width: 90%;
+    height: 60px;
+    margin: 15px;
+}
+
+.num-container {
+    justify-content: space-around;
+    width: auto;
+    padding: 15px 0;
+}
+
+.num-container .num-row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.non-display {
+    display: flex;
+    justify-content: center;
+}
+
+.display {
+    text-align: center;
+}
+.operators {
+    padding: 15px 0px;
+}
+
+.modifiers {
+    padding: 15px 0px;
+}
+
+.ops {
+    display: flex;
+    justify-content: space-around;
+    width: auto;
+    margin: 0px 15px;
+    padding: 15px;
+}
+
+input.double {
+    height: 140px !important;
+}

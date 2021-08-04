@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Online Calculator </title>
+        <link rel="stylesheet" type="text/css" href="./calculator.css">      
+    </head>
+    <body>       
+        <div class="main-container">
+            <h1 class="Online-calculator">Ganaka-Yantram</h1>
+            <div class="display"> <input type="text" id="result" onkeypress="return onlyNumberKey(event)"> </div>
+            <div class="non-display">
+            <div class="num+ops">
+            <div class="num-container">
+                <div class="num-row">
+                    <div><input type="button" value="1" class="blk" onclick="dis('1')"/></div>
+                    <div><input type="button" value="2" class="blk" onclick="dis('2')"/></div>
+                    <div><input type="button" value="3" class="blk" onclick="dis('3')"/></div>
+                </div>
+                <div class="num-row">
+                    <div><input type="button" value="4" class="blk" onclick="dis('4')"/></div>
+                    <div><input type="button" value="5" class="blk" onclick="dis('5')"/></div>
+                    <div><input type="button" value="6" class="blk" onclick="dis('6')"/></div>
+                </div>
+                <div class="num-row">
+                    <div><input type="button" value="7" class="blk" onclick="dis('7')"/></div>
+                    <div><input type="button" value="8" class="blk" onclick="dis('8')"/></div>
+                    <div><input type="button" value="9" class="blk" onclick="dis('9')"/></div>
+                </div>
+                <div class="num-row">
+                    <div><input type="button" value="." class="blk" onclick="dis('.')"/></div>
+                    <div><input type="button" value="0" class="blk" onclick="dis('0')"/></div>
+                    <div><input type="button" value="00" class="blk" onclick="dis('00')"/></div>
+                </div>
+                <div class="num-row">
+                    <div> <input type="button" value=x&#178 class="blk" onclick="sqre()"> </div>
+                <div> <input type="button" value=&#8730x class="blk" onclick="sqrt()"> </div>
+                <div> <input type="button" value="%" class="blk" onclick="dis('%')"/> </div>
+                </div>
+            </div>
+           
+            </div>
+            <div class="operators">
+                <div><input type="button" value="/" class="blk" onclick="dis('/')"/></div>
+                <div><input type="button" value="*" class="blk" onclick="dis('*')"/></div>
+                <div><input type="button" value="-" class="blk" onclick="dis('-')"/></div>
+                <div><input type="button" value="+" class="double blk" onclick="dis('+')"/></div>
+            </div>
+            <div class="modifiers">
+                <div> <input type="button" value="AC" class="double red" onclick="clr()"/> </div>
+                <div> <input type="button" value="<<" class="red" onclick="backspace()"/> </div>
+                <div> <input type="button" value="=" class="double green" onclick="solve()"/> </div>
+            </div>
+         </div> 
+        </div>
+        <script src="./calculator.js"></script>
+    </body>
+</html>
+
