@@ -41,12 +41,12 @@ function backspace()
        solve();
        var num= document.getElementById("result").value;
        var square= num*num;
-       document.getElementById("result").value = square;
+       document.getElementById("result").value = square.toFixed(3);
    }
    
    function sqrt() 
    {
        solve();
        var num=document.getElementById("result").value;
-       document.getElementById("result").value = Math.sqrt(num);
+       document.getElementById("result").value = Math.sqrt(num).toFixed(3);
    }
